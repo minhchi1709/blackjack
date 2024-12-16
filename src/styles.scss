@@ -44,8 +44,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 div app-card {
   display: block;
-  height: calc(min(28vh, 21vw));
-  max-width: calc(min(20vh, 15vw)  + 5px);
+  max-width: 15vw;
+  max-height: 21vw;
 }
 
 app-lang {

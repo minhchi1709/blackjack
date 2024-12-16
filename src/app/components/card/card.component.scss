@@ -1,6 +1,6 @@
 .card {
-  height: calc(min(28vh, 21vw));
-  width: calc(min(20vh, 15vw));
+  width: 15vw;
+  height: 21vw;
   border-radius: 10px;
   font-size: 25px;
   font-weight: bold;
@@ -10,11 +10,6 @@
   background-color: white;
   border-bottom: none;
   height: 10%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 1.5rem;
-  padding-left: 1rem;
 }
 
 .card-body {
@@ -29,11 +24,6 @@
   border-top: none;
   transform: rotate(180deg);
   height: 10%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 1.5rem;
-  padding-left: 1rem;
 }
 
 .center-suit {
@@ -47,7 +37,7 @@
 }
 
 .card-back {
-  height: 80%;
+  height: 90%;
   width: auto
 }
 
