@@ -1,0 +1,6 @@
+<div class="announcement" #announcement>
+  {{ msg }}
+</div>
+<div *ngIf="type > 0" class="bet-amount" [ngStyle]="{'color': type > 1 ? 'green' : 'red'}" #bet>
+ {{ type > 1 ? '+' : '-' }}{{ betAmount }}
+</div>

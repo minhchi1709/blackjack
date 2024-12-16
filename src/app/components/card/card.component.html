@@ -1,0 +1,18 @@
+<div class="card">
+  <div style="height: 100%; width: 100%" *ngIf="showed else back">
+    <div class="card-header">
+      {{ card.getRank }} <img class="suit" src="{{ suitSrc }}" alt="{{ card.getSuit}}">
+    </div>
+    <div class="card-body">
+      <img class="center-suit" src="{{ suitSrc }}" alt="{{ card.getSuit }}">
+    </div>
+    <div class="card-footer">
+      {{ card.getRank }} <img class="suit" src="{{ suitSrc }}" alt="{{ card.getSuit}}">
+    </div>
+  </div>
+  <ng-template #back>
+    <div class="card-back-container">
+      <img class="card-back" src="assets/cards/card-back.png" alt="card back">
+    </div>
+  </ng-template>
+</div>

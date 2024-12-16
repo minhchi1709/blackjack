@@ -1,0 +1,13 @@
+.balance-container {
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 20px;
+  font-size: 1.2em;
+  @media (max-width: 1400px) {
+    font-size: 0.9em;
+  }
+}
+
+#balance {
+  font-weight: bold;
+}

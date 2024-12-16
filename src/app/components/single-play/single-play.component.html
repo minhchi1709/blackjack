@@ -1,0 +1,47 @@
+<ng-container #container></ng-container>
+<div class="container">
+  <div class="board">
+    <div class="person-1">
+      <div class="point" id="point-1" *ngIf="end">
+        {{ host.getPlayer1.getPoints }}
+      </div>
+      <div class="person-container">
+        <ng-container #person1></ng-container>
+      </div>
+    </div>
+    <div class="person-2">
+      <div class="point" id="point-2" *ngIf="init">
+        {{ host.getPlayer2.getPoints }}
+      </div>
+      <div class="person-container">
+        <ng-container #person2></ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="action-container">
+  <button class="play" (click)="play()">
+    {{ playLabel[lang] }}
+  </button>
+  <button [ngStyle]="{'color': drawDisabled ? 'grey' : '#fff'}" class="action" (click)="draw()" [disabled]="drawDisabled">
+    {{ drawLabel[lang] }}
+  </button>
+  <button [ngStyle]="{'color': holdDisabled ? 'grey' : '#fff'}" class="action" (click)="hold()" [disabled]="holdDisabled">
+    {{ holdLabel[lang] }}
+  </button>
+</div>
+
+<div class="chips-container">
+  <img class="chip" (click)="addBet(5)" src="assets/chips/5.png" alt="5">
+  <img class="chip" (click)="addBet(10)" src="assets/chips/10.png" alt="10">
+  <img class="chip" (click)="addBet(25)" src="assets/chips/25.png" alt="25">
+  <img class="chip" (click)="addBet(100)" src="assets/chips/100.png" alt="100">
+  <img class="chip" (click)="addBet(500)" src="assets/chips/500.png" alt="500">
+</div>
+
+<div id="bet" *ngIf="betAmount > 0">
+  {{ betAmount }} €
+</div>
+
+<app-back-button/>

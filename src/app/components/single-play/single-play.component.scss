@@ -1,0 +1,141 @@
+.person-1, .person-2 {
+  height: 50%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+#bet {
+  position: absolute;
+  right: 1rem;
+  top: 50vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.chips-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 10px;
+  bottom: 5px
+}
+
+.chip {
+  height: 9vh;
+  width: auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.chip:active {
+  top: 3px
+}
+
+.point {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: #fdd102;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+#point-1 {
+  position: absolute;
+  top: 10rem;
+  left: 1rem
+}
+
+#point-2 {
+  position: absolute;
+  bottom: 10rem;
+  left: 1rem
+}
+
+.person-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.action-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 60vh;
+  right: 1rem;
+  gap: 1rem
+}
+/* From Uiverse.io by satyamchaudharydev */
+.play {
+  --bg: #e74c3c;
+  --text-color: #fff;
+  width: 10vw;
+  border: none;
+  background: var(--bg);
+  color: var(--text-color);
+  padding: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 5px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+}
+
+.play:hover {
+  opacity: 1;
+}
+
+.play:active {
+  position: relative;
+  top: 3px;
+  box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;
+}
+
+.action {
+  --bg: #0d6efd;
+  --text-color: #fff;
+  width: 10vw;
+  border: none;
+  background: var(--bg);
+  color: var(--text-color);
+  padding: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 5px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  box-shadow: #2441af 0px 7px 2px, #000 0px 8px 5px;
+  cursor: pointer
+}
+
+.action:hover {
+  opacity: 1;
+}
+
+.action:active {
+  position: relative;
+  top: 3px;
+  box-shadow: #2441af 0px 3px 2px,#000 0px 3px 5px;
+}

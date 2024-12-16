@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: url("assets/background.jpeg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+html, body, app-root, app-main, app-multiple-play, app-single-play {
+  height: 100%;
+  width: 100%;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 72vw;
+  position: relative;
+}
+
+.board {
+  height: 80vh;
+  width: 100%;
+  border: 5px solid #fdd102;
+  border-radius: 20px;
+  background-color: #1a8c0a;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+div app-card {
+  display: block;
+  height: calc(min(28vh, 21vw));
+  max-width: calc(min(20vh, 15vw)  + 5px);
+}
+
+app-lang {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+app-balance {
+  position: absolute;
+  top: 12rem;
+  right: 1rem;
+}
+
+app-warning {
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
