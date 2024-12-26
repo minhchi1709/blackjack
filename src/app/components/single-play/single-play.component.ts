@@ -112,6 +112,7 @@ export class SinglePlayComponent implements OnInit{
       setTimeout(() => warning.destroy(), 1500)
       return
     }
+    this.playClicked = true
     this.waiting = true
     this.init = false
     this.end = false
@@ -179,7 +180,7 @@ export class SinglePlayComponent implements OnInit{
           app.style.opacity = '1'
           app.style.zIndex = zIndex
         }
-      }, 3100)
+      }, 1200)
       this.playClicked = false
       this.betAmount = 0
       this.hasBet = false

@@ -89,6 +89,10 @@ export class Host {
           if (point1 > point2) return 2
           if (point2 > point1) return 1
         }
+
+        if (this.player1.getTotalCards == 5) return 1
+        if (this.player2.getTotalCards == 5) return 2
+
         if (point1 == point2) return 0
         if (point1 > point2) return 1
         if (point2 > point1) return 2
